@@ -5,6 +5,16 @@ public class Order {
 	private double totalPrice;
 	private double tax;
 	private String content;
+	private Cart cart;
+	 
+	public Order(int iD, double totalPrice, double tax, String content, Cart cart) {
+		super();
+		ID = iD;
+		this.totalPrice = totalPrice;
+		this.tax = tax;
+		this.content = content;
+		this.cart = cart;
+	}
 	public String getContent() {
 		return content;
 	}

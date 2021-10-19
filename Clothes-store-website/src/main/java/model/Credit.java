@@ -2,7 +2,7 @@ package model;
 
 import java.sql.Date;
 
-public class Credit {
+public class Credit extends Payment{
 	private int number;
 	private String type;
 	private Date exdate;

@@ -7,6 +7,24 @@ public class Item {
 	private int popularity;
 	private int discount;
 	private String clothesCode;
+	private Comment comment;
+	private Clothes clothes;
+		
+	public Item() {
+		super();
+	}
+	public Item(double price, String barcode, int quantity, int popularity, int discount, String clothesCode,
+			Comment comment, Clothes clothes) {
+		super();
+		this.price = price;
+		this.barcode = barcode;
+		this.quantity = quantity;
+		this.popularity = popularity;
+		this.discount = discount;
+		this.clothesCode = clothesCode;
+		this.comment = comment;
+		this.clothes = clothes;
+	}
 	public String getBarcode() {
 		return barcode;
 	}
@@ -41,5 +59,17 @@ public class Item {
 	}
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
+	}
+	public Comment getComment() {
+		return comment;
+	}
+	public void setComment(Comment comment) {
+		this.comment = comment;
+	}
+	public Clothes getClothes() {
+		return clothes;
+	}
+	public void setClothes(Clothes clothes) {
+		this.clothes = clothes;
 	}
 }

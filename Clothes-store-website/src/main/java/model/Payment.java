@@ -3,6 +3,15 @@ package model;
 public class Payment {
 	private int ID;
 	private String method;
+	
+	public Payment() {
+		super();
+	}
+	public Payment(int iD, String method) {
+		super();
+		ID = iD;
+		this.method = method;
+	}
 	public int getID() {
 		return ID;
 	}
