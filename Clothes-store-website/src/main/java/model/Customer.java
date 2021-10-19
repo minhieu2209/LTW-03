@@ -3,7 +3,6 @@ package model;
 import java.sql.Date;
 
 public class Customer {
-	private int ID;
 	private String tel;
 	private Date dob;
 	private String email;
@@ -12,9 +11,8 @@ public class Customer {
 	private FullName fullname;
 	
 
-	public Customer(int iD, String tel, Date dob, String email, Account account, Address address, FullName fullname) {
+	public Customer(String tel, Date dob, String email, Account account, Address address, FullName fullname) {
 		super();
-		ID = iD;
 		this.tel = tel;
 		this.dob = dob;
 		this.email = email;
@@ -37,12 +35,7 @@ public class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getID() {
-		return ID;
-	}
-	public void setID(int iD) {
-		ID = iD;
-	}
+	
 	public String getTel() {
 		return tel;
 	}

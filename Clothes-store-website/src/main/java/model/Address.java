@@ -1,15 +1,13 @@
 package model;
 
 public class Address {
-	private int ID;
 	private int HomeNo;
 	private String city;
 	private String street;
 	private String district;
 
-	public Address(int iD, int homeNo, String city, String street, String district) {
+	public Address(int homeNo, String city, String street, String district) {
 		super();
-		ID = iD;
 		HomeNo = homeNo;
 		this.city = city;
 		this.street = street;
@@ -28,9 +26,6 @@ public class Address {
 		return HomeNo;
 	}
 
-	public int getID() {
-		return ID;
-	}
 
 	public String getStreet() {
 		return street;
@@ -48,9 +43,6 @@ public class Address {
 		HomeNo = homeNo;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
-	}
 
 	public void setStreet(String street) {
 		this.street = street;
