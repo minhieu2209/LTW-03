@@ -8,7 +8,7 @@ public class Comment {
 	public Comment() {
 		super();
 	}
-	public Comment(int rate, String content, Customter customer) {
+	public Comment(int rate, String content, Customer customer) {
 		super();
 		this.rate = rate;
 		this.content = content;
